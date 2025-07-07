@@ -17,7 +17,7 @@ const ProductScreen = () => {
   const { id: productId } = useParams();
   const navigate = useNavigate();
   const product = products.find((p) => p._id === productId);
-  console.log(product);
+
 
   const [qty, setQty] = useState(1);
   const [comment, setComment] = useState('');
